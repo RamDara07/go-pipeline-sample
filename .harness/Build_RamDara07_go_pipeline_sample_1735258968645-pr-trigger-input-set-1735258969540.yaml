@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_RamDara07_go_pipeline_sample_1735258968645-pr-trigger-input-set
+  identifier: Build_RamDara07_go_pipeline_sample_1735258968645prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_RamDara07_go_pipeline_sample_1735258968645
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
