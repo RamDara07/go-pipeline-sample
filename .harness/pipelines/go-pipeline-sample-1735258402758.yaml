@@ -21,9 +21,10 @@ pipeline:
             steps:
               - step:
                   identifier: gobuild
-                  name: go_build
+                  name: Echo Welcome Message
                   spec:
-                    command: go build
+                    shell: Sh
+                    command: echo "Welcome to Harness CI"
                   timeout: ""
                   type: Run
               - step:
@@ -57,9 +58,9 @@ pipeline:
                   timeout: ""
                   type: BuildAndPushDockerRegistry
           platform:
-            arch: Amd64
             os: Linux
+            arch: Amd64
           runtime:
-            spec: {}
             type: Cloud
+            spec: {}
         type: CI
