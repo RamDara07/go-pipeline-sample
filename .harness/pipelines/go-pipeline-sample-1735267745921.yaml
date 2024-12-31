@@ -19,14 +19,6 @@ pipeline:
                   spec:
                     shell: Sh
                     command: echo "Welcome to Harness CI"
-              - step:
-                  type: Test
-                  name: Test_1
-                  identifier: Test_1
-                  spec:
-                    shell: Sh
-                    command: pip test
-                    intelligenceMode: true
           platform:
             os: Linux
             arch: Amd64
