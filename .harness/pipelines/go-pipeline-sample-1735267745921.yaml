@@ -20,14 +20,13 @@ pipeline:
                     shell: Sh
                     command: echo "Welcome to Harness CI"
               - step:
-                  type: RunTests
-                  name: RunTests_1
-                  identifier: RunTests_1
+                  type: Test
+                  name: Test_1
+                  identifier: Test_1
                   spec:
-                    language: Python
-                    buildTool: Pytest
-                    runOnlySelectedTests: true
-                    enableTestSplitting: false
+                    shell: Sh
+                    command: pip test
+                    intelligenceMode: true
           platform:
             os: Linux
             arch: Amd64
